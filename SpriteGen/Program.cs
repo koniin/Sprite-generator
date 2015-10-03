@@ -19,6 +19,15 @@ namespace SpriteGen {
             gridDrawer.Draw(generator.Grid);
             Console.WriteLine();
 
+            var spaceShipGenerator = new SpaceShipGenerator();
+            spaceShipGenerator.Generate(2991999);
+            gridDrawer.Draw(spaceShipGenerator.Grid);
+            Console.WriteLine();
+
+            spaceShipGenerator.GenerateRandom();
+            gridDrawer.Draw(spaceShipGenerator.Grid);
+            Console.WriteLine();
+
             Console.Read();
         }
     }

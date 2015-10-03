@@ -15,6 +15,12 @@ namespace SpriteGen {
             if(grid[y, x] == 2) {
                 Console.ForegroundColor = ConsoleColor.Red;
             }
+            if(grid[y, x] == 4) {
+                Console.ForegroundColor = ConsoleColor.Blue;
+            }
+            if(grid[y, x] == 1) {
+                Console.ForegroundColor = ConsoleColor.Black;
+            }
             Console.Write(grid[y, x]);
 
             Console.ForegroundColor = defaultColor;
